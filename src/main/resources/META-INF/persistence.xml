@@ -4,7 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
             <property name="hibernate.connection.url"
-                      value="jdbc:hsqldb:file:/Users/sap/Documents/my-projects/hospital-db2/database/hospital-bd2;hsqldb.lock_file=false;shutdown=true"/>
+                      value="jdbc:hsqldb:file:./database/hospital-bd2;hsqldb.lock_file=false;shutdown=true"/>
             <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>
             <property name="hibernate.connection.username" value="SR"/>
             <property name="hibernate.connection.password" value=""/>
