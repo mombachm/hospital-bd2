@@ -24,10 +24,14 @@ public class MainHospital {
             System.out.println("Commit realizado com sucesso.");
         }catch (Exception e) {
             System.out.println("Erro ao executar commit.");
+            manager.getTransaction().rollback();
+        }
+        finally {
+            manager.close();
         }
     }
 
-    public static EntityManager buildEntityManager() {
+    private static EntityManager buildEntityManager() {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("hospital-mysql");
         return factory.createEntityManager();
     }
