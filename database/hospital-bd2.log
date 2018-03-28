@@ -1,8 +1,4 @@
 /*C3*/SET SCHEMA PUBLIC
-\u000a    drop table Paciente if exists
-\u000a    drop sequence hibernate_sequence
-create sequence hibernate_sequence start with 1 increment by 1
-\u000a    create table Paciente (\u000a        Id integer not null,\u000a        CPF varchar(255),\u000a        DtNascimento timestamp,\u000a        Endereco varchar(255),\u000a        Nome varchar(255),\u000a        RG varchar(255),\u000a        Telefone varchar(255),\u000a        primary key (Id)\u000a    )
-INSERT INTO PACIENTE VALUES(1,'12345678911',NULL,NULL,'Pedro',NULL,NULL)
-COMMIT
-ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+DISCONNECT
+/*C4*/SET SCHEMA PUBLIC
+set schema PUBLIC

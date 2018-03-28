@@ -8,15 +8,11 @@ import java.util.Calendar;
 public class Paciente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Id")
-    private int codigo;
+    @Column(name = "CPF", unique = true)
+    private String cpf;
 
     @Column(name = "Nome")
     private String nome;
-
-    @Column(name = "CPF")
-    private String cpf;
 
     @Column(name = "Telefone")
     private String telefone;
@@ -30,21 +26,17 @@ public class Paciente {
     @Column(name = "RG")
     private String rg;
 
-    public Paciente(String nome, String cpf, String telefone, Calendar data_nascimento, String endereco, String rg) {
-        this.nome = nome;
+    public Paciente(String cpf, String nome, String telefone, Calendar data_nascimento, String endereco, String rg) {
         this.cpf = cpf;
+        this.nome = nome;
         this.telefone = telefone;
         this.data_nascimento = data_nascimento;
         this.endereco = endereco;
         this.rg = rg;
     }
 
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public String getCpf() {
+        return cpf;
     }
 
     public String getNome() {
@@ -53,14 +45,6 @@ public class Paciente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String getTelefone() {
