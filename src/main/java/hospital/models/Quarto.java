@@ -18,6 +18,9 @@ public class Quarto {
         this.andar = andar;
     }
 
+    public Quarto() {
+    }
+
     public String getNumero() {
         return this.numero;
     }
