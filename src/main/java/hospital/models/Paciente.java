@@ -27,7 +27,7 @@ public class Paciente {
     private String telefone;
 
     @Column(name = "DtNascimento")
-    private Calendar data_nascimento;
+    private Calendar dataNascimento;
 
     @Column(name = "Endereco")
     private String endereco;
@@ -42,11 +42,11 @@ public class Paciente {
     @ManyToOne
     private Quarto quarto;
 
-    public Paciente(String cpf, String nome, String telefone, Calendar data_nascimento, String endereco, String rg, Quarto quarto) {
+    public Paciente(String cpf, String nome, String telefone, Calendar dataNascimento, String endereco, String rg, Quarto quarto) {
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
-        this.data_nascimento = data_nascimento;
+        this.dataNascimento = dataNascimento;
         this.endereco = endereco;
         this.rg = rg;
         this.quarto = quarto;
@@ -89,11 +89,11 @@ public class Paciente {
     }
 
     public Calendar getData_nascimento() {
-        return data_nascimento;
+        return dataNascimento;
     }
 
     public void setData_nascimento(Calendar data_nascimento) {
-        this.data_nascimento = data_nascimento;
+        this.dataNascimento = data_nascimento;
     }
 
     public String getEndereco() {
