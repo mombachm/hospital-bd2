@@ -1,5 +1,8 @@
 package hospital;
 
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
+import hospital.control.GeradorJSON;
 import hospital.control.GeradorXML;
 import hospital.models.*;
 
@@ -22,6 +25,8 @@ public class MainHospital {
         Consulta consulta = new Consulta(medico, paciente, cal);
 
         System.out.println(new GeradorXML().gerarXML(consulta));
+        System.out.println("\n");
+        System.out.println(new GeradorJSON().gerarJSON(consulta));
 
         EntityManager manager = buildEntityManager();
 
@@ -42,7 +47,7 @@ public class MainHospital {
     }
 
     private static EntityManager buildEntityManager() {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("hospital-mysql");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("hospital-hsql");
         return factory.createEntityManager();
     }
 
