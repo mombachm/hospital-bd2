@@ -3,28 +3,38 @@
 
     <persistence-unit name="hospital-mysql">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.unisinos.hospital.models.Quarto</class>
+        <class>br.unisinos.hospital.models.Consulta</class>
+        <class>br.unisinos.hospital.models.Especializacao</class>
+        <class>br.unisinos.hospital.models.Paciente</class>
+        <class>br.unisinos.hospital.models.Medico</class>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/hospital"/>
-            <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/hospital"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="root"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         </properties>
     </persistence-unit>
 
     <persistence-unit name="hospital-hsql">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.unisinos.hospital.models.Quarto</class>
+        <class>br.unisinos.hospital.models.Consulta</class>
+        <class>br.unisinos.hospital.models.Especializacao</class>
+        <class>br.unisinos.hospital.models.Paciente</class>
+        <class>br.unisinos.hospital.models.Medico</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:hsqldb:file:./database/hospital-bd2;hsqldb.lock_file=false;shutdown=true"/>
             <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>
             <property name="hibernate.connection.username" value="SR"/>
             <property name="hibernate.connection.password" value=""/>
             <property name="hibernate.archive.autodetection" value="class"/>
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         </properties>
     </persistence-unit>

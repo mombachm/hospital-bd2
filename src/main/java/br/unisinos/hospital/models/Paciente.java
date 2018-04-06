@@ -1,8 +1,7 @@
-package hospital.models;
+package br.unisinos.hospital.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
@@ -32,7 +31,7 @@ public class Paciente {
     @Column(name = "Endereco")
     private String endereco;
 
-    @Column(name = "RG")
+    @Column(name = "RG", unique = true)
     private String rg;
 
     @OneToMany(mappedBy="paciente")

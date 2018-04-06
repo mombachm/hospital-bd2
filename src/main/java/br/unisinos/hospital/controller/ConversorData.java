@@ -1,4 +1,4 @@
-package hospital.control;
+package br.unisinos.hospital.controller;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -19,7 +19,7 @@ public class ConversorData implements Converter {
 
     private Locale locale;
 
-    public ConversorData(Locale locale) {
+    private ConversorData(Locale locale) {
         super();
         this.locale = locale;
     }
@@ -32,7 +32,7 @@ public class ConversorData implements Converter {
                         MarshallingContext context) {
         Calendar calendar = (Calendar) value;
         Date date = calendar.getTime();
-        //DateFormat formatter = DateFormat.getDateInstance(DateFormat.FULL, this.locale);
+
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm");
         writer.setValue(formatter.format(date));
     }

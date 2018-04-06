@@ -1,4 +1,4 @@
-package hospital.models;
+package br.unisinos.hospital.models;
 
 import javax.persistence.*;
 
