@@ -1,26 +1,26 @@
 <list id="1">
   <Especializacao id="2">
-    <id>1</id>
-    <descricao>Endocrinologia</descricao>
+    <id>0</id>
+    <descricao>Urologia</descricao>
   </Especializacao>
   <Especializacao id="3">
-    <id>2</id>
+    <id>0</id>
     <descricao>Cardiologia</descricao>
   </Especializacao>
   <Especializacao id="4">
-    <id>3</id>
+    <id>0</id>
     <descricao>Geriatria</descricao>
   </Especializacao>
   <Especializacao id="5">
-    <id>4</id>
+    <id>0</id>
     <descricao>Neurologia</descricao>
   </Especializacao>
   <Especializacao id="6">
-    <id>5</id>
+    <id>0</id>
     <descricao>Dermatologia</descricao>
   </Especializacao>
   <Especializacao id="7">
-    <id>6</id>
+    <id>0</id>
     <descricao>Radioterapia</descricao>
   </Especializacao>
 </list>

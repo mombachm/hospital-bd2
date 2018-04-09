@@ -25,6 +25,9 @@ public class MainHospital {
         ArrayList<Medico> medicos = criaMedicos(especializacoes);
         ArrayList<Consulta> consultas = criaConsultas(medicos, pacientes, datasConsulta);
 
+        // Criando arquivos
+        criaArquivos(quartos, especializacoes, pacientes, medicos, consultas);
+
         // Criando conexão com o banco de dados
         EntityManager manager = buildEntityManager();
         manager.getTransaction().begin();
@@ -46,9 +49,6 @@ public class MainHospital {
         // Queryes (DELETE) Metodos
         Consulta consulta = manager.find(Consulta.class, 1L);
         manager.remove(consulta);
-
-        // Criando arquivos
-        criaArquivos(quartos, especializacoes, pacientes, medicos, consultas);
 
         try {
             manager.getTransaction().commit();

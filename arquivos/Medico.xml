@@ -1,61 +1,61 @@
 <list id="1">
   <Medico id="2">
-    <id>1</id>
+    <id>0</id>
     <crm>1035</crm>
     <nome>Carlos</nome>
     <salario>3500.0</salario>
     <especializacao id="3">
-      <id>1</id>
-      <descricao>Endocrinologia</descricao>
+      <id>0</id>
+      <descricao>Urologia</descricao>
     </especializacao>
   </Medico>
   <Medico id="4">
-    <id>2</id>
+    <id>0</id>
     <crm>0156</crm>
     <nome>Pedro</nome>
     <salario>4500.0</salario>
     <especializacao id="5">
-      <id>2</id>
+      <id>0</id>
       <descricao>Cardiologia</descricao>
     </especializacao>
   </Medico>
   <Medico id="6">
-    <id>3</id>
+    <id>0</id>
     <crm>2568</crm>
     <nome>Leticia</nome>
     <salario>3700.0</salario>
     <especializacao id="7">
-      <id>3</id>
+      <id>0</id>
       <descricao>Geriatria</descricao>
     </especializacao>
   </Medico>
   <Medico id="8">
-    <id>4</id>
+    <id>0</id>
     <crm>3541</crm>
     <nome>Sonia</nome>
     <salario>2500.0</salario>
     <especializacao id="9">
-      <id>4</id>
+      <id>0</id>
       <descricao>Neurologia</descricao>
     </especializacao>
   </Medico>
   <Medico id="10">
-    <id>5</id>
+    <id>0</id>
     <crm>5985</crm>
     <nome>Paulo</nome>
     <salario>2500.0</salario>
     <especializacao id="11">
-      <id>5</id>
+      <id>0</id>
       <descricao>Dermatologia</descricao>
     </especializacao>
   </Medico>
   <Medico id="12">
-    <id>6</id>
+    <id>0</id>
     <crm>0354</crm>
     <nome>Jaqueline</nome>
     <salario>3000.0</salario>
     <especializacao id="13">
-      <id>6</id>
+      <id>0</id>
       <descricao>Radioterapia</descricao>
     </especializacao>
   </Medico>
