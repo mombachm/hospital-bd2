@@ -9,7 +9,7 @@ public class GeradorArquivoJSON extends GeradorArquivo {
 
     public GeradorArquivoJSON(String arquivo) throws IOException {
         this.xStream = new XStream(new JsonHierarchicalStreamDriver());
-        this.bufferedWriter = new BufferedWriter(new FileWriter(new File(arquivo)));
+        this.bufferedWriter = new BufferedWriter(new FileWriter(new File(".\\arquivos\\" + arquivo)));
     }
 
 }

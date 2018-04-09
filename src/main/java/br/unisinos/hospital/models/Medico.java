@@ -6,7 +6,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Medico.all", query = "SELECT m FROM Medico m"),
+        @NamedQuery(name = "Medico.byId", query = "SELECT m FROM Medico m WHERE m.id = :pId"),
+        @NamedQuery(name = "Medico.byCrm", query = "SELECT m FROM Medico m WHERE m.crm = :pCrm"),
+        @NamedQuery(name = "Medico.byNome", query = "SELECT m FROM Medico m WHERE m.nome = :pNome"),
+        @NamedQuery(name = "Medico.byEspecializacao", query = "SELECT m FROM Medico m JOIN m.especializacao e WHERE e.id = :pEspecializacao")
+})
 @Table(name = "Medico", uniqueConstraints = @UniqueConstraint(columnNames = {"CRM"}))
+
 public class Medico {
 
     @Id
@@ -88,5 +96,14 @@ public class Medico {
         this.consultas.add(consulta);
     }
 
-
+    @Override
+    public String toString() {
+        return "Medico: " +
+                "\nid: " + id +
+                "\ncrm: " + crm +
+                "\nnome: " + nome +
+                "\nsalario: " + salario +
+                "\nespecializacao: " + especializacao +
+                '}';
+    }
 }

@@ -19,7 +19,7 @@ public class ConversorData implements Converter {
 
     private Locale locale;
 
-    private ConversorData(Locale locale) {
+    public ConversorData(Locale locale) {
         super();
         this.locale = locale;
     }

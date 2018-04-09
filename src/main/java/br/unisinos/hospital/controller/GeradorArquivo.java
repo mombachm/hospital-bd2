@@ -19,12 +19,12 @@ abstract class GeradorArquivo {
         configuraPaciente();
         configuraMedico();
         configuraConsulta();
-        this.xStream.setMode(XStream.NO_REFERENCES);
+        this.xStream.setMode(XStream.ID_REFERENCES);
 
-        String xml = this.xStream.toXML(obj);
-        this.bufferedWriter.write(xml);
+        String xmlojson = this.xStream.toXML(obj);
+        this.bufferedWriter.write(xmlojson);
         this.bufferedWriter.close();
-        return xml;
+        return xmlojson;
 
     }
 
@@ -39,6 +39,7 @@ abstract class GeradorArquivo {
     private void configuraConsulta() {
         this.xStream.alias("Consultas", Consulta.class);
         this.xStream.registerConverter(new ConversorData(new Locale("pt", "br")));
+        this.xStream.omitField(Consulta.class, "initialized");
     }
 
     private void configuraMedico() {

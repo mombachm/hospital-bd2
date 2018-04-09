@@ -11,7 +11,7 @@ public class GeradorArquivoXML extends GeradorArquivo {
 
     public GeradorArquivoXML(String arquivo) throws IOException {
         this.xStream = new XStream();
-        this.bufferedWriter = new BufferedWriter(new FileWriter(new File(arquivo)));
+        this.bufferedWriter = new BufferedWriter(new FileWriter(new File(".\\arquivos\\" + arquivo)));
     }
 
 }

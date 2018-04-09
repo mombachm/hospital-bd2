@@ -1,0 +1,126 @@
+<list id="1">
+  <Paciente id="2">
+    <id>1</id>
+    <nome>Pedro</nome>
+    <cpf>12345678911</cpf>
+    <telefone>(051) 3549-3568</telefone>
+    <dataNascimento id="3">20/10/1967 01:33</dataNascimento>
+    <endereco>Rua A</endereco>
+    <rg>1234567891</rg>
+    <quarto id="4">
+      <quartoID id="5">
+        <numero>10</numero>
+        <andar>2B</andar>
+      </quartoID>
+      <pacientes class="org.hibernate.collection.internal.PersistentSet" id="6">
+        <initialized>true</initialized>
+        <owner class="Quarto" reference="4"/>
+        <cachedSize>-1</cachedSize>
+        <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+        <key class="br.unisinos.hospital.models.QuartoID" reference="5"/>
+        <dirty>false</dirty>
+        <storedSnapshot class="map" id="7"/>
+        <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+        <set id="8"/>
+      </pacientes>
+    </quarto>
+  </Paciente>
+  <Paciente id="9">
+    <id>2</id>
+    <nome>Joao</nome>
+    <cpf>12345678912</cpf>
+    <telefone>(051) 8648-3344</telefone>
+    <dataNascimento id="10">19/03/1952 03:20</dataNascimento>
+    <endereco>Rua B</endereco>
+    <rg>1234567892</rg>
+    <quarto reference="4"/>
+  </Paciente>
+  <Paciente id="11">
+    <id>3</id>
+    <nome>Maria</nome>
+    <cpf>12345678913</cpf>
+    <telefone>(051) 1122-2256</telefone>
+    <dataNascimento id="12">28/08/1978 04:22</dataNascimento>
+    <endereco>Rua C</endereco>
+    <rg>1234567893</rg>
+    <quarto reference="4"/>
+  </Paciente>
+  <Paciente id="13">
+    <id>4</id>
+    <nome>Roberto</nome>
+    <cpf>12345678914</cpf>
+    <telefone>(051) 3896-3541</telefone>
+    <dataNascimento id="14">11/01/1995 02:54</dataNascimento>
+    <endereco>Rua D</endereco>
+    <rg>1234567894</rg>
+    <quarto id="15">
+      <quartoID id="16">
+        <numero>7</numero>
+        <andar>2B</andar>
+      </quartoID>
+      <pacientes class="org.hibernate.collection.internal.PersistentSet" id="17">
+        <initialized>true</initialized>
+        <owner class="Quarto" reference="15"/>
+        <cachedSize>-1</cachedSize>
+        <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+        <key class="br.unisinos.hospital.models.QuartoID" reference="16"/>
+        <dirty>false</dirty>
+        <storedSnapshot class="map" id="18"/>
+        <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+        <set id="19"/>
+      </pacientes>
+    </quarto>
+  </Paciente>
+  <Paciente id="20">
+    <id>5</id>
+    <nome>Lucas</nome>
+    <cpf>12345678915</cpf>
+    <telefone>(051) 3214-2548</telefone>
+    <dataNascimento id="21">12/02/1966 09:16</dataNascimento>
+    <endereco>Rua E</endereco>
+    <rg>1234567895</rg>
+    <quarto id="22">
+      <quartoID id="23">
+        <numero>12</numero>
+        <andar>2B</andar>
+      </quartoID>
+      <pacientes class="org.hibernate.collection.internal.PersistentSet" id="24">
+        <initialized>true</initialized>
+        <owner class="Quarto" reference="22"/>
+        <cachedSize>-1</cachedSize>
+        <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+        <key class="br.unisinos.hospital.models.QuartoID" reference="23"/>
+        <dirty>false</dirty>
+        <storedSnapshot class="map" id="25"/>
+        <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+        <set id="26"/>
+      </pacientes>
+    </quarto>
+  </Paciente>
+  <Paciente id="27">
+    <id>6</id>
+    <nome>Carolina</nome>
+    <cpf>12345678916</cpf>
+    <telefone>(051) 9863-5786</telefone>
+    <dataNascimento id="28">25/12/1981 12:41</dataNascimento>
+    <endereco>Rua J</endereco>
+    <rg>1234567896</rg>
+    <quarto id="29">
+      <quartoID id="30">
+        <numero>1</numero>
+        <andar>2B</andar>
+      </quartoID>
+      <pacientes class="org.hibernate.collection.internal.PersistentSet" id="31">
+        <initialized>true</initialized>
+        <owner class="Quarto" reference="29"/>
+        <cachedSize>-1</cachedSize>
+        <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+        <key class="br.unisinos.hospital.models.QuartoID" reference="30"/>
+        <dirty>false</dirty>
+        <storedSnapshot class="map" id="32"/>
+        <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+        <set id="33"/>
+      </pacientes>
+    </quarto>
+  </Paciente>
+</list>

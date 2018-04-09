@@ -1,0 +1,87 @@
+<list id="1">
+  <Quarto id="2">
+    <quartoID id="3">
+      <numero>10</numero>
+      <andar>2B</andar>
+    </quartoID>
+    <pacientes class="org.hibernate.collection.internal.PersistentSet" id="4">
+      <initialized>true</initialized>
+      <owner class="Quarto" reference="2"/>
+      <cachedSize>-1</cachedSize>
+      <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+      <key class="br.unisinos.hospital.models.QuartoID" reference="3"/>
+      <dirty>false</dirty>
+      <storedSnapshot class="map" id="5"/>
+      <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+      <set id="6"/>
+    </pacientes>
+  </Quarto>
+  <Quarto id="7">
+    <quartoID id="8">
+      <numero>5</numero>
+      <andar>2B</andar>
+    </quartoID>
+    <pacientes class="org.hibernate.collection.internal.PersistentSet" id="9">
+      <initialized>true</initialized>
+      <owner class="Quarto" reference="7"/>
+      <cachedSize>-1</cachedSize>
+      <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+      <key class="br.unisinos.hospital.models.QuartoID" reference="8"/>
+      <dirty>false</dirty>
+      <storedSnapshot class="map" id="10"/>
+      <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+      <set id="11"/>
+    </pacientes>
+  </Quarto>
+  <Quarto id="12">
+    <quartoID id="13">
+      <numero>7</numero>
+      <andar>2B</andar>
+    </quartoID>
+    <pacientes class="org.hibernate.collection.internal.PersistentSet" id="14">
+      <initialized>true</initialized>
+      <owner class="Quarto" reference="12"/>
+      <cachedSize>-1</cachedSize>
+      <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+      <key class="br.unisinos.hospital.models.QuartoID" reference="13"/>
+      <dirty>false</dirty>
+      <storedSnapshot class="map" id="15"/>
+      <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+      <set id="16"/>
+    </pacientes>
+  </Quarto>
+  <Quarto id="17">
+    <quartoID id="18">
+      <numero>12</numero>
+      <andar>2B</andar>
+    </quartoID>
+    <pacientes class="org.hibernate.collection.internal.PersistentSet" id="19">
+      <initialized>true</initialized>
+      <owner class="Quarto" reference="17"/>
+      <cachedSize>-1</cachedSize>
+      <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+      <key class="br.unisinos.hospital.models.QuartoID" reference="18"/>
+      <dirty>false</dirty>
+      <storedSnapshot class="map" id="20"/>
+      <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+      <set id="21"/>
+    </pacientes>
+  </Quarto>
+  <Quarto id="22">
+    <quartoID id="23">
+      <numero>1</numero>
+      <andar>2B</andar>
+    </quartoID>
+    <pacientes class="org.hibernate.collection.internal.PersistentSet" id="24">
+      <initialized>true</initialized>
+      <owner class="Quarto" reference="22"/>
+      <cachedSize>-1</cachedSize>
+      <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+      <key class="br.unisinos.hospital.models.QuartoID" reference="23"/>
+      <dirty>false</dirty>
+      <storedSnapshot class="map" id="25"/>
+      <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+      <set id="26"/>
+    </pacientes>
+  </Quarto>
+</list>

@@ -1,0 +1,127 @@
+{"list": [
+  {
+    "@id": "2",
+    "quartoID": {
+      "@id": "3",
+      "numero": "10",
+      "andar": "2B"
+    },
+    "pacientes": [
+      true,
+      {
+        "@class": "Quarto",
+        "@reference": "2"
+      },
+      -1,
+      "br.unisinos.hospital.models.Quarto.pacientes",
+      {
+        "@class": "br.unisinos.hospital.models.QuartoID",
+        "@reference": "3"
+      },
+      false,
+      [],
+      false,
+      []
+    ]
+  },
+  {
+    "@id": "7",
+    "quartoID": {
+      "@id": "8",
+      "numero": "5",
+      "andar": "2B"
+    },
+    "pacientes": [
+      true,
+      {
+        "@class": "Quarto",
+        "@reference": "7"
+      },
+      -1,
+      "br.unisinos.hospital.models.Quarto.pacientes",
+      {
+        "@class": "br.unisinos.hospital.models.QuartoID",
+        "@reference": "8"
+      },
+      false,
+      [],
+      false,
+      []
+    ]
+  },
+  {
+    "@id": "12",
+    "quartoID": {
+      "@id": "13",
+      "numero": "7",
+      "andar": "2B"
+    },
+    "pacientes": [
+      true,
+      {
+        "@class": "Quarto",
+        "@reference": "12"
+      },
+      -1,
+      "br.unisinos.hospital.models.Quarto.pacientes",
+      {
+        "@class": "br.unisinos.hospital.models.QuartoID",
+        "@reference": "13"
+      },
+      false,
+      [],
+      false,
+      []
+    ]
+  },
+  {
+    "@id": "17",
+    "quartoID": {
+      "@id": "18",
+      "numero": "12",
+      "andar": "2B"
+    },
+    "pacientes": [
+      true,
+      {
+        "@class": "Quarto",
+        "@reference": "17"
+      },
+      -1,
+      "br.unisinos.hospital.models.Quarto.pacientes",
+      {
+        "@class": "br.unisinos.hospital.models.QuartoID",
+        "@reference": "18"
+      },
+      false,
+      [],
+      false,
+      []
+    ]
+  },
+  {
+    "@id": "22",
+    "quartoID": {
+      "@id": "23",
+      "numero": "1",
+      "andar": "2B"
+    },
+    "pacientes": [
+      true,
+      {
+        "@class": "Quarto",
+        "@reference": "22"
+      },
+      -1,
+      "br.unisinos.hospital.models.Quarto.pacientes",
+      {
+        "@class": "br.unisinos.hospital.models.QuartoID",
+        "@reference": "23"
+      },
+      false,
+      [],
+      false,
+      []
+    ]
+  }
+]}

@@ -4,6 +4,11 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Especializacao.all", query = "SELECT e FROM Especializacao e"),
+        @NamedQuery(name = "Especializacao.byId", query = "SELECT e FROM Especializacao e WHERE e.id = :pId"),
+        @NamedQuery(name = "Especializacao.byDescricao", query = "SELECT e FROM Especializacao e WHERE e.descricao like :pDescricao"),
+})
 @Table(name = "Especializacao", uniqueConstraints = @UniqueConstraint(columnNames = {"descricao"}))
 public class Especializacao {
 

@@ -2,12 +2,24 @@ package br.unisinos.hospital.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "Paciente", uniqueConstraints = @UniqueConstraint(columnNames = {"CPF", "RG"}))
+@NamedQueries({
+        @NamedQuery(name = "Paciente.all", query = "SELECT p FROM Paciente p"),
+        @NamedQuery(name = "Paciente.byId", query = "SELECT p FROM Paciente p WHERE p.id = :pId"),
+        @NamedQuery(name = "Paciente.byName", query = "SELECT p FROM Paciente p WHERE p.nome = :pNome"),
+        @NamedQuery(name = "Paciente.byCPF", query = "SELECT p FROM Paciente p WHERE p.nome = :pCPF"),
+        @NamedQuery(name = "Paciente.byRG", query = "SELECT p FROM Paciente p WHERE p.nome = :pRG")
+})
+@Table(name = "Paciente", uniqueConstraints = {
+            @UniqueConstraint(columnNames = "RG"),
+            @UniqueConstraint(columnNames = "CPF")
+            }
+        )
 public class Paciente {
 
     @Id
@@ -131,4 +143,19 @@ public class Paciente {
         this.consultas.add(consulta);
     }
 
+    public String getDataConsultaFormatada(){
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+        return formatter.format(this.dataNascimento.getTime());
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente: " + nome +
+                "\ncpf: " + cpf +
+                "\ntelefone: " + telefone +
+                "\ndataNascimento: " + getDataConsultaFormatada() +
+                "\nendereco: " + endereco +
+                "\nrg: " + rg +
+                "\n" + quarto.toString();
+    }
 }

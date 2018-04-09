@@ -1,36 +1,52 @@
 package br.unisinos.hospital.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Quarto.all", query = "SELECT q FROM Quarto q"),
+        @NamedQuery(name = "Quarto.byId", query = "SELECT q FROM Quarto q JOIN q.quartoID qID WHERE qID.andar = :pAndar"),
+        @NamedQuery(name = "Quarto.byNumero", query = "SELECT q FROM Quarto q JOIN q.quartoID qID WHERE qID.numero = :pNumero")
+})
 @Table(name = "Quarto")
 public class Quarto {
 
-    @Id
-    @Column(name = "Numero", unique = true)
-    private String numero;
+    @EmbeddedId
+    private QuartoID quartoID;
 
-    @Column(name = "Nome")
-    private String andar;
+    @OneToMany(mappedBy = "quarto")
+    @Size(max = 6)
+    private Set<Paciente> pacientes = new HashSet<Paciente>();
 
-    public Quarto(String numero, String andar) {
-        this.numero = numero;
-        this.andar = andar;
-    }
-
+    @Deprecated
     public Quarto() {
     }
 
-    public String getNumero() {
-        return this.numero;
+    public Quarto(QuartoID quartoID) {
+        this.quartoID = quartoID;
     }
 
-    public void setAndar(String andar) {
-        this.andar = andar;
+    public QuartoID getQuartoID() {
+        return quartoID;
     }
 
-    public String getAndar() {
-        return this.andar;
+    public void setQuartoID(QuartoID quartoID) {
+        this.quartoID = quartoID;
     }
 
+    public Set<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public void setPacientes(Set<Paciente> pacientes) {
+        this.pacientes = pacientes;
+    }
+
+    @Override
+    public String toString() {
+        return quartoID.toString();
+    }
 }

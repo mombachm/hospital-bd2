@@ -1,0 +1,142 @@
+<list id="1">
+  <Consultas id="2">
+    <id>1</id>
+    <medico id="3">
+      <id>1</id>
+      <crm>1035</crm>
+      <nome>Carlos</nome>
+      <salario>3500.0</salario>
+      <especializacao id="4">
+        <id>1</id>
+        <descricao>Endocrinologia</descricao>
+      </especializacao>
+    </medico>
+    <paciente id="5">
+      <id>1</id>
+      <nome>Pedro</nome>
+      <cpf>12345678911</cpf>
+      <telefone>(051) 3549-3568</telefone>
+      <dataNascimento id="6">20/10/1967 01:33</dataNascimento>
+      <endereco>Rua A</endereco>
+      <rg>1234567891</rg>
+      <quarto id="7">
+        <quartoID id="8">
+          <numero>10</numero>
+          <andar>2B</andar>
+        </quartoID>
+        <pacientes class="org.hibernate.collection.internal.PersistentSet" id="9">
+          <initialized>true</initialized>
+          <owner class="Quarto" reference="7"/>
+          <cachedSize>-1</cachedSize>
+          <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+          <key class="br.unisinos.hospital.models.QuartoID" reference="8"/>
+          <dirty>false</dirty>
+          <storedSnapshot class="map" id="10"/>
+          <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+          <set id="11"/>
+        </pacientes>
+      </quarto>
+    </paciente>
+    <dataConsulta id="12">12/04/2018 01:30</dataConsulta>
+  </Consultas>
+  <Consultas id="13">
+    <id>2</id>
+    <medico id="14">
+      <id>2</id>
+      <crm>0156</crm>
+      <nome>Pedro</nome>
+      <salario>4500.0</salario>
+      <especializacao id="15">
+        <id>2</id>
+        <descricao>Cardiologia</descricao>
+      </especializacao>
+    </medico>
+    <paciente reference="5"/>
+    <dataConsulta id="16">12/04/2018 03:20</dataConsulta>
+  </Consultas>
+  <Consultas id="17">
+    <id>3</id>
+    <medico id="18">
+      <id>3</id>
+      <crm>2568</crm>
+      <nome>Leticia</nome>
+      <salario>3700.0</salario>
+      <especializacao id="19">
+        <id>3</id>
+        <descricao>Geriatria</descricao>
+      </especializacao>
+    </medico>
+    <paciente id="20">
+      <id>2</id>
+      <nome>Joao</nome>
+      <cpf>12345678912</cpf>
+      <telefone>(051) 8648-3344</telefone>
+      <dataNascimento id="21">19/03/1952 03:20</dataNascimento>
+      <endereco>Rua B</endereco>
+      <rg>1234567892</rg>
+      <quarto reference="7"/>
+    </paciente>
+    <dataConsulta reference="12"/>
+  </Consultas>
+  <Consultas id="22">
+    <id>4</id>
+    <medico reference="18"/>
+    <paciente id="23">
+      <id>4</id>
+      <nome>Roberto</nome>
+      <cpf>12345678914</cpf>
+      <telefone>(051) 3896-3541</telefone>
+      <dataNascimento id="24">11/01/1995 02:54</dataNascimento>
+      <endereco>Rua D</endereco>
+      <rg>1234567894</rg>
+      <quarto id="25">
+        <quartoID id="26">
+          <numero>7</numero>
+          <andar>2B</andar>
+        </quartoID>
+        <pacientes class="org.hibernate.collection.internal.PersistentSet" id="27">
+          <initialized>true</initialized>
+          <owner class="Quarto" reference="25"/>
+          <cachedSize>-1</cachedSize>
+          <role>br.unisinos.hospital.models.Quarto.pacientes</role>
+          <key class="br.unisinos.hospital.models.QuartoID" reference="26"/>
+          <dirty>false</dirty>
+          <storedSnapshot class="map" id="28"/>
+          <allowLoadOutsideTransaction>false</allowLoadOutsideTransaction>
+          <set id="29"/>
+        </pacientes>
+      </quarto>
+    </paciente>
+    <dataConsulta reference="16"/>
+  </Consultas>
+  <Consultas id="30">
+    <id>5</id>
+    <medico id="31">
+      <id>5</id>
+      <crm>5985</crm>
+      <nome>Paulo</nome>
+      <salario>2500.0</salario>
+      <especializacao id="32">
+        <id>5</id>
+        <descricao>Dermatologia</descricao>
+      </especializacao>
+    </medico>
+    <paciente reference="23"/>
+    <dataConsulta id="33">12/04/2018 09:10</dataConsulta>
+  </Consultas>
+  <Consultas id="34">
+    <id>6</id>
+    <medico id="35">
+      <id>6</id>
+      <crm>0354</crm>
+      <nome>Jaqueline</nome>
+      <salario>3000.0</salario>
+      <especializacao id="36">
+        <id>6</id>
+        <descricao>Radioterapia</descricao>
+      </especializacao>
+    </medico>
+    <paciente reference="23"/>
+    <dataConsulta id="37">12/04/2018 11:30</dataConsulta>
+  </Consultas>
+</list>
