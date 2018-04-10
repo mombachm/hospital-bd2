@@ -4,34 +4,29 @@
       <numero>10</numero>
       <andar>2B</andar>
     </quartoID>
-    <pacientes id="4"/>
   </Quarto>
-  <Quarto id="5">
-    <quartoID id="6">
+  <Quarto id="4">
+    <quartoID id="5">
       <numero>5</numero>
       <andar>2B</andar>
     </quartoID>
-    <pacientes id="7"/>
   </Quarto>
-  <Quarto id="8">
-    <quartoID id="9">
+  <Quarto id="6">
+    <quartoID id="7">
       <numero>7</numero>
       <andar>2B</andar>
     </quartoID>
-    <pacientes id="10"/>
   </Quarto>
-  <Quarto id="11">
-    <quartoID id="12">
+  <Quarto id="8">
+    <quartoID id="9">
       <numero>12</numero>
       <andar>2B</andar>
     </quartoID>
-    <pacientes id="13"/>
   </Quarto>
-  <Quarto id="14">
-    <quartoID id="15">
+  <Quarto id="10">
+    <quartoID id="11">
       <numero>1</numero>
       <andar>2B</andar>
     </quartoID>
-    <pacientes id="16"/>
   </Quarto>
 </list>

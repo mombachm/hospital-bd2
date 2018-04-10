@@ -19,6 +19,7 @@ abstract class GeradorArquivo {
         configuraPaciente();
         configuraMedico();
         configuraConsulta();
+
         this.xStream.setMode(XStream.ID_REFERENCES);
 
         String xmlojson = this.xStream.toXML(obj);
@@ -38,6 +39,7 @@ abstract class GeradorArquivo {
 
     private void configuraConsulta() {
         this.xStream.alias("Consultas", Consulta.class);
+        this.xStream.omitField(Quarto.class, "pacientes");
         this.xStream.registerConverter(new ConversorData(new Locale("pt", "br")));
         this.xStream.omitField(Consulta.class, "initialized");
     }

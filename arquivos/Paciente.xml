@@ -1,6 +1,6 @@
 <list id="1">
   <Paciente id="2">
-    <id>0</id>
+    <id>1</id>
     <nome>Pedro</nome>
     <cpf>12345678911</cpf>
     <telefone>(051) 3549-3568</telefone>
@@ -12,75 +12,71 @@
         <numero>10</numero>
         <andar>2B</andar>
       </quartoID>
-      <pacientes id="6"/>
     </quarto>
   </Paciente>
-  <Paciente id="7">
-    <id>0</id>
+  <Paciente id="6">
+    <id>2</id>
     <nome>Joao</nome>
     <cpf>12345678912</cpf>
     <telefone>(051) 8648-3344</telefone>
-    <dataNascimento id="8">19/03/1952 03:20</dataNascimento>
+    <dataNascimento id="7">19/03/1952 03:20</dataNascimento>
     <endereco>Rua B</endereco>
     <rg>1234567892</rg>
     <quarto reference="4"/>
   </Paciente>
-  <Paciente id="9">
-    <id>0</id>
+  <Paciente id="8">
+    <id>3</id>
     <nome>Maria</nome>
     <cpf>12345678913</cpf>
     <telefone>(051) 1122-2256</telefone>
-    <dataNascimento id="10">28/08/1978 04:22</dataNascimento>
+    <dataNascimento id="9">28/08/1978 04:22</dataNascimento>
     <endereco>Rua C</endereco>
     <rg>1234567893</rg>
     <quarto reference="4"/>
   </Paciente>
-  <Paciente id="11">
-    <id>0</id>
+  <Paciente id="10">
+    <id>4</id>
     <nome>Roberto</nome>
     <cpf>12345678914</cpf>
     <telefone>(051) 3896-3541</telefone>
-    <dataNascimento id="12">11/01/1995 02:54</dataNascimento>
+    <dataNascimento id="11">11/01/1995 02:54</dataNascimento>
     <endereco>Rua D</endereco>
     <rg>1234567894</rg>
-    <quarto id="13">
-      <quartoID id="14">
+    <quarto id="12">
+      <quartoID id="13">
         <numero>7</numero>
         <andar>2B</andar>
       </quartoID>
-      <pacientes id="15"/>
     </quarto>
   </Paciente>
-  <Paciente id="16">
-    <id>0</id>
+  <Paciente id="14">
+    <id>5</id>
     <nome>Lucas</nome>
     <cpf>12345678915</cpf>
     <telefone>(051) 3214-2548</telefone>
-    <dataNascimento id="17">12/02/1966 09:16</dataNascimento>
+    <dataNascimento id="15">12/02/1966 09:16</dataNascimento>
     <endereco>Rua E</endereco>
     <rg>1234567895</rg>
-    <quarto id="18">
-      <quartoID id="19">
+    <quarto id="16">
+      <quartoID id="17">
         <numero>12</numero>
         <andar>2B</andar>
       </quartoID>
-      <pacientes id="20"/>
     </quarto>
   </Paciente>
-  <Paciente id="21">
-    <id>0</id>
+  <Paciente id="18">
+    <id>6</id>
     <nome>Carolina</nome>
     <cpf>12345678916</cpf>
     <telefone>(051) 9863-5786</telefone>
-    <dataNascimento id="22">25/12/1981 12:41</dataNascimento>
+    <dataNascimento id="19">25/12/1981 12:41</dataNascimento>
     <endereco>Rua J</endereco>
     <rg>1234567896</rg>
-    <quarto id="23">
-      <quartoID id="24">
+    <quarto id="20">
+      <quartoID id="21">
         <numero>1</numero>
         <andar>2B</andar>
       </quartoID>
-      <pacientes id="25"/>
     </quarto>
   </Paciente>
 </list>

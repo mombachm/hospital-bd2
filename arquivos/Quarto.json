@@ -5,43 +5,38 @@
       "@id": "3",
       "numero": "10",
       "andar": "2B"
-    },
-    "pacientes": []
+    }
   },
   {
-    "@id": "5",
+    "@id": "4",
     "quartoID": {
-      "@id": "6",
+      "@id": "5",
       "numero": "5",
       "andar": "2B"
-    },
-    "pacientes": []
+    }
+  },
+  {
+    "@id": "6",
+    "quartoID": {
+      "@id": "7",
+      "numero": "7",
+      "andar": "2B"
+    }
   },
   {
     "@id": "8",
     "quartoID": {
       "@id": "9",
-      "numero": "7",
-      "andar": "2B"
-    },
-    "pacientes": []
-  },
-  {
-    "@id": "11",
-    "quartoID": {
-      "@id": "12",
       "numero": "12",
       "andar": "2B"
-    },
-    "pacientes": []
+    }
   },
   {
-    "@id": "14",
+    "@id": "10",
     "quartoID": {
-      "@id": "15",
+      "@id": "11",
       "numero": "1",
       "andar": "2B"
-    },
-    "pacientes": []
+    }
   }
 ]}

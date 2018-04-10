@@ -1,18 +1,18 @@
 <list id="1">
   <Consultas id="2">
-    <id>0</id>
+    <id>1</id>
     <medico id="3">
-      <id>0</id>
+      <id>1</id>
       <crm>1035</crm>
       <nome>Carlos</nome>
       <salario>3500.0</salario>
       <especializacao id="4">
-        <id>0</id>
-        <descricao>Urologia</descricao>
+        <id>1</id>
+        <descricao>Endocrinologia</descricao>
       </especializacao>
     </medico>
     <paciente id="5">
-      <id>0</id>
+      <id>1</id>
       <nome>Pedro</nome>
       <cpf>12345678911</cpf>
       <telefone>(051) 3549-3568</telefone>
@@ -24,99 +24,97 @@
           <numero>10</numero>
           <andar>2B</andar>
         </quartoID>
-        <pacientes id="9"/>
       </quarto>
     </paciente>
-    <dataConsulta id="10">12/04/2018 01:30</dataConsulta>
+    <dataConsulta id="9">12/04/2018 01:30</dataConsulta>
   </Consultas>
-  <Consultas id="11">
-    <id>0</id>
-    <medico id="12">
-      <id>0</id>
+  <Consultas id="10">
+    <id>2</id>
+    <medico id="11">
+      <id>2</id>
       <crm>0156</crm>
       <nome>Pedro</nome>
       <salario>4500.0</salario>
-      <especializacao id="13">
-        <id>0</id>
+      <especializacao id="12">
+        <id>2</id>
         <descricao>Cardiologia</descricao>
       </especializacao>
     </medico>
     <paciente reference="5"/>
-    <dataConsulta id="14">12/04/2018 03:20</dataConsulta>
+    <dataConsulta id="13">12/04/2018 03:20</dataConsulta>
   </Consultas>
-  <Consultas id="15">
-    <id>0</id>
-    <medico id="16">
-      <id>0</id>
+  <Consultas id="14">
+    <id>3</id>
+    <medico id="15">
+      <id>3</id>
       <crm>2568</crm>
       <nome>Leticia</nome>
       <salario>3700.0</salario>
-      <especializacao id="17">
-        <id>0</id>
+      <especializacao id="16">
+        <id>3</id>
         <descricao>Geriatria</descricao>
       </especializacao>
     </medico>
-    <paciente id="18">
-      <id>0</id>
+    <paciente id="17">
+      <id>2</id>
       <nome>Joao</nome>
       <cpf>12345678912</cpf>
       <telefone>(051) 8648-3344</telefone>
-      <dataNascimento id="19">19/03/1952 03:20</dataNascimento>
+      <dataNascimento id="18">19/03/1952 03:20</dataNascimento>
       <endereco>Rua B</endereco>
       <rg>1234567892</rg>
       <quarto reference="7"/>
     </paciente>
-    <dataConsulta reference="10"/>
+    <dataConsulta reference="9"/>
   </Consultas>
-  <Consultas id="20">
-    <id>0</id>
-    <medico reference="16"/>
-    <paciente id="21">
-      <id>0</id>
+  <Consultas id="19">
+    <id>4</id>
+    <medico reference="15"/>
+    <paciente id="20">
+      <id>4</id>
       <nome>Roberto</nome>
       <cpf>12345678914</cpf>
       <telefone>(051) 3896-3541</telefone>
-      <dataNascimento id="22">11/01/1995 02:54</dataNascimento>
+      <dataNascimento id="21">11/01/1995 02:54</dataNascimento>
       <endereco>Rua D</endereco>
       <rg>1234567894</rg>
-      <quarto id="23">
-        <quartoID id="24">
+      <quarto id="22">
+        <quartoID id="23">
           <numero>7</numero>
           <andar>2B</andar>
         </quartoID>
-        <pacientes id="25"/>
       </quarto>
     </paciente>
-    <dataConsulta reference="14"/>
+    <dataConsulta reference="13"/>
   </Consultas>
-  <Consultas id="26">
-    <id>0</id>
-    <medico id="27">
-      <id>0</id>
+  <Consultas id="24">
+    <id>5</id>
+    <medico id="25">
+      <id>5</id>
       <crm>5985</crm>
       <nome>Paulo</nome>
       <salario>2500.0</salario>
-      <especializacao id="28">
-        <id>0</id>
+      <especializacao id="26">
+        <id>5</id>
         <descricao>Dermatologia</descricao>
       </especializacao>
     </medico>
-    <paciente reference="21"/>
-    <dataConsulta id="29">12/04/2018 09:10</dataConsulta>
+    <paciente reference="20"/>
+    <dataConsulta id="27">12/04/2018 09:10</dataConsulta>
   </Consultas>
-  <Consultas id="30">
-    <id>0</id>
-    <medico id="31">
-      <id>0</id>
+  <Consultas id="28">
+    <id>6</id>
+    <medico id="29">
+      <id>6</id>
       <crm>0354</crm>
       <nome>Jaqueline</nome>
       <salario>3000.0</salario>
-      <especializacao id="32">
-        <id>0</id>
+      <especializacao id="30">
+        <id>6</id>
         <descricao>Radioterapia</descricao>
       </especializacao>
     </medico>
-    <paciente reference="21"/>
-    <dataConsulta id="33">12/04/2018 11:30</dataConsulta>
+    <paciente reference="20"/>
+    <dataConsulta id="31">12/04/2018 11:30</dataConsulta>
   </Consultas>
 </list>
